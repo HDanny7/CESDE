@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Tienda de Ropa Femenina</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FDF2F8;
+            color: #4A1942;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #F7C9DE; 
+            padding: 20px 5%;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive; 
+            font-size: 3.5rem;
+            color: #D6336C; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7A2E4D;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #D6336C;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #F3B4C9;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #D6336C;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: #7A2E4D;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        #coleccion p {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        .galeria-coleccion {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .galeria-coleccion img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(214, 51, 108, 0.2);
+        }
+
+        .categorias-lista {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .categorias-lista li {
+            background-color: #FCE4EF;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .categorias-lista a {
+            color: #D6336C;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .categorias-lista a:hover {
+            text-decoration: underline;
+        }
+
+        #nosotros p {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #7A2E4D;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            border: 1px solid #F3B4C9;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+
+        input[type="email"]:focus {
+            outline: 2px solid #D6336C;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #D6336C;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #B02555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 5%;
+            background-color: #F7C9DE;
+            color: #7A2E4D;
+        }
+
+        footer a {
+            color: #D6336C;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AURA</h1>
+        <img src="./img/logo.jpg" alt="Logo Aura" width="600" height="300">
+        <nav>
+            <ul>
+                <li><a href="#coleccion">Nueva Colección</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#suscribete">Suscríbete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="coleccion">
+            <h2>Nueva Colección</h2>
+            <div class="galeria-coleccion">
+                <img src="https://placehold.co/500x600/f7c9de/7a2e4d?text=Vestido+Floral" alt="Modelo luciendo un vestido floral de la nueva colección AURA">
+                <img src="https://placehold.co/500x600/f3b4c9/7a2e4d?text=Blusa+Rosa" alt="Blusa rosa de manga larga de la nueva colección AURA">
+                <img src="https://placehold.co/500x600/fce4ef/7a2e4d?text=Conjunto+Casual" alt="Conjunto casual de pantalón y top de la nueva colección AURA">
+            </div>
+            <p>Descubre las prendas que marcarán la temporada. Diseños frescos, cómodos y pensados para ti.</p>
+        </section>
+
+        <section id="categorias">
+            <h2>Categorías</h2>
+            <ul class="categorias-lista">
+                <li><a href="https://www.instagram.com/reels/DPNMCPWDNBj/" target="_blank">Vestidos</a></li>
+                <li><a href="https://www.instagram.com/p/DTJMMxbksVa/" target="_blank">Blusas</a></li>
+                <li><a href="https://www.vogue.mx/articulo/como-llevar-pantalones-color-cafe-elegantes-para-la-oficina-en-verano-2025" target="_blank">Pantalones</a></li>
+                <li><a href="https://placehold.co/700x900/f8d7e7/7a2e4d?text=Accesorios" target="_blank">Accesorios</a></li>
+            </ul>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>AURA nació con el sueño de vestir a la mujer moderna, ofreciendo prendas de calidad que combinan estilo y comodidad. Hoy damos el paso de llevar nuestra marca al mundo digital para llegar a más clientas.</p>
+        </section>
+
+        <section id="suscribete">
+            <h2>Suscríbete</h2>
+            <h3>Entérate de nuestras novedades y promociones</h3>
+            <form>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contacto: contacto@aura.com | Síguenos en <a href="https://www.instagram.com">Instagram</a></p>
+        <p>&copy; 2026 AURA. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
