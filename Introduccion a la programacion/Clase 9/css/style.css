@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---- Para Index.html ---- 
+
+header{
+    width: 100%;
+    height: 400px;
+    background-color: #b81594;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #e21111;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+ */
+
+/* Para reto.html
+body{
+    background-color: #f28fdc;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #e3bada;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(70, 38, 159);
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav a:hover{
+    color: rgb(239, 37, 178);
+    border-bottom: 2px solid rgb(89, 21, 69);
+}
+
+.cesde{
+    width: 100%;
+
+    background-color: #ef2cc4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+.cesde .logotipo{
+    width: 100px;
+    border-radius: 5px;
+}
+.cesde .navegador a{
+    text-decoration: none;
+    color: rgb(106, 14, 113);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.cesde .navegador a:hover{
+    color: rgb(15, 1, 11);
+    border-bottom: 2px solid rgb(89, 21, 69);
+}
+.cesde .redes img{
+    width: 30px;
+    margin: 10px;
+}
+ */
+
+ /* Reseteo básico de márgenes y paddings */
+/* Reseteo general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* =========================================
+   ESTILOS DEL HEADER CON FLEXBOX
+   ========================================= */
+.main-header {
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between; /* Distribuye Logo, Nav y Acciones a lo ancho */
+  align-items: center;
+  padding: 0.8rem 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 1. Estilos del Logo */
+.logo a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+}
+
+.nike-swoosh {
+  fill: #ffffff; /* Color blanco para el logo vectorial */
+}
+
+/* 2. Estilos de la Navegación */
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem; /* Espaciado cómodo entre links */
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+/* Animación de línea inferior al hacer hover */
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* 3. Estilos de los Iconos de Acción */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #cccccc;
+}
