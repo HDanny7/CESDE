@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="El Delirio">
+<rect width="64" height="64" rx="12" fill="#3B1F5C"/>
+<path d="M10 30 L13 5 L29 17 Q32 16.5 35 17 L51 5 L54 30 Q56 44 32 44 Q8 44 10 30Z" fill="#fff"/>
+<circle cx="23" cy="29" r="5" fill="#1E90E0"/><circle cx="41" cy="29" r="5" fill="#1E90E0"/>
+<circle cx="23" cy="29" r="2.2" fill="#121212"/><circle cx="41" cy="29" r="2.2" fill="#121212"/>
+<path d="M30 36 L34 36 L32 38.5Z" fill="#3B1F5C"/>
+<path d="M6 52 Q19 47 32 52 Q45 47 58 52 L58 60 Q45 55 32 60 Q19 55 6 60Z" fill="#1E90E0"/>
+</svg>

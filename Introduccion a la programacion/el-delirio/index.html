@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Delirio | Libros digitales (EPUB y PDF) y físicos</title>
+<meta name="description" content="Librería en línea: elige cómo leer. Libros EPUB y PDF con descarga inmediata o físicos con envío a domicilio, en pesos colombianos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="El Delirio | Libros digitales (EPUB y PDF) y físicos">
+<meta property="og:description" content="Librería en línea: elige cómo leer. Libros EPUB y PDF con descarga inmediata o físicos con envío a domicilio, en pesos colombianos.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BookStore","name":"El Delirio","description":"Librería en línea con libros digitales (EPUB y PDF) y físicos, precios en pesos colombianos.","areaServed":"CO","currenciesAccepted":"COP"}</script>
+</head>
+<body data-page="inicio">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<section class="hero"><div class="contenedor hero__grid">
+  <div>
+    <h1>Libros para perderte</h1>
+    <p>Al instante en tu pantalla o en papel en tu casa. Elige entre EPUB, PDF y libros físicos, con precios en pesos colombianos.</p>
+    <div class="hero__acciones"><a class="btn btn--azur" href="catalogo.html">Explorar catálogo</a><a class="btn btn--borde-claro" href="ayuda.html#formatos">¿Qué formato me sirve?</a></div>
+  </div>
+  <div class="hero__escena" aria-hidden="true"><div class="hero__gato" id="hero-gato"></div><div class="hero__pila" id="hero-pila"></div></div>
+</div></section>
+
+<section class="seccion" aria-labelledby="gen-t"><div class="contenedor">
+  <h2 id="gen-t">Géneros</h2><div class="chips" id="generos"></div>
+</div></section>
+
+<section class="seccion seccion--lavanda" aria-labelledby="dest-t"><div class="contenedor">
+  <div class="encabezado-seccion"><h2 id="dest-t">Selección destacada</h2><a href="catalogo.html">Ver todo el catálogo</a></div>
+  <div class="rejilla" id="destacados"></div>
+</div></section>
+
+<section class="ventajas" aria-label="Ventajas de comprar en El Delirio"><div class="contenedor ventajas__grid">
+  <div class="ventaja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16"/></svg><div><h3>Descarga inmediata</h3><p>Los libros EPUB y PDF quedan listos al pagar y guardados en Mi biblioteca.</p></div></div>
+  <div class="ventaja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a1.500 1.500 0 1 0 0-.1M17 19a1.500 1.500 0 1 0 0-.1"/></svg><div><h3>Envío a domicilio</h3><p>Los libros físicos llegan a tu casa. El costo depende de tu ciudad.</p></div></div>
+  <div class="ventaja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6zM9 12l2 2 4-4"/></svg><div><h3>Pago seguro</h3><p>Tarjeta, PSE y billeteras digitales (en este proyecto el pago es simulado).</p></div></div>
+</div></section>
+
+<section class="seccion" aria-labelledby="nue-t"><div class="contenedor">
+  <h2 id="nue-t">Recién llegados</h2><div class="rejilla" id="nuevos"></div>
+</div></section>
+
+<section class="boletin" aria-labelledby="bol-t"><div class="contenedor">
+  <h2 id="bol-t">Únete a los lectores de El Delirio</h2>
+  <p>Recibe las novedades del catálogo en tu correo.</p>
+  <form id="boletin-form" novalidate>
+    <div class="campo"><label class="solo-lectores" for="bol-correo">Correo electrónico</label><input id="bol-correo" name="correo" type="email" placeholder="tu@correo.com" autocomplete="email"></div>
+    <button class="btn btn--azur" type="submit">Suscribirme</button>
+  </form>
+  <p id="boletin-msg" role="status"></p>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>

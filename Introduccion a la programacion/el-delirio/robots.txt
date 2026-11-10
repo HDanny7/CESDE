@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# PENDIENTE: reemplazar por el dominio real al publicar
+Sitemap: https://www.ejemplo.com/sitemap.xml

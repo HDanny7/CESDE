@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda, envíos y contacto | El Delirio</title>
+<meta name="description" content="Guía de formatos EPUB, PDF y físico, preguntas frecuentes, envíos y devoluciones, contacto y legal de El Delirio.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="Ayuda, envíos y contacto | El Delirio">
+<meta property="og:description" content="Guía de formatos EPUB, PDF y físico, preguntas frecuentes, envíos y devoluciones, contacto y legal de El Delirio.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="ayuda">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<div class="pagina-cabecera"><div class="contenedor"><h1>Ayuda</h1><p>Formatos, envíos, preguntas frecuentes y contacto.</p></div></div>
+<section class="seccion" id="formatos" aria-labelledby="fmt-t"><div class="contenedor">
+  <h2 id="fmt-t">¿Qué formato me sirve?</h2>
+  <div class="guia">
+    <article><h3>EPUB</h3><p>Para lectores digitales y celulares. Descarga inmediata al pagar.</p></article>
+    <article><h3>PDF</h3><p>Para leer en el computador o imprimir. Descarga inmediata al pagar.</p></article>
+    <article><h3>Físico</h3><p>El libro en papel, con envío a domicilio. El costo depende de tu ciudad.</p></article>
+  </div>
+</div></section>
+<section class="seccion seccion--lavanda" id="faq" aria-labelledby="faq-t"><div class="contenedor">
+  <h2 id="faq-t">Preguntas frecuentes</h2>
+  <details><summary>¿Es seguro pagar?</summary><p>El Delirio ofrecerá tarjeta, PSE y billeteras digitales. En este proyecto académico el pago es simulado: no se cobra nada ni se piden datos de tarjeta.</p></details>
+  <details><summary>¿Puedo probar un libro antes de comprarlo?</summary><p>Sí. En la ficha de cada libro está el botón «Leer muestra». Algunas muestras aún están pendientes de cargar.</p></details>
+  <details><summary>¿Cuánto cuesta el envío de un libro físico?</summary><p>Depende de tu ciudad; mira la tabla en la sección de envíos. Los tiempos de entrega están pendientes de confirmar.</p></details>
+  <details><summary>¿Puedo volver a descargar un libro que compré?</summary><p>Sí. Todos tus libros digitales quedan en <a href="biblioteca.html">Mi biblioteca</a> para descargarlos de nuevo.</p></details>
+</div></section>
+<section class="seccion" id="envios" aria-labelledby="env-t"><div class="contenedor">
+  <h2 id="env-t">Envíos y devoluciones</h2>
+  <p>Hacemos envíos nacionales de libros físicos. Los libros digitales no tienen envío.</p>
+  <table><caption class="solo-lectores">Costo de envío por ciudad</caption><thead><tr><th scope="col">Ciudad</th><th scope="col">Costo</th></tr></thead><tbody><tr><td>Medellín</td><td>$8.000</td></tr><tr><td>Bogotá</td><td>$12.000</td></tr><tr><td>Cali</td><td>$12.000</td></tr><tr><td>Barranquilla</td><td>$14.000</td></tr><tr><td>Otra ciudad de Colombia</td><td>$18.000</td></tr></tbody></table>
+  <p style="margin-top:1rem"><span class="pendiente">Valores de ejemplo, pendientes de confirmar</span></p>
+  <p>Política de devoluciones: <span class="pendiente">pendiente de definir con el cliente</span></p>
+</div></section>
+<section class="seccion seccion--lavanda" id="contacto" aria-labelledby="con-t"><div class="contenedor estrecho">
+  <h2 id="con-t">Contacto</h2>
+  <form id="form-contacto" novalidate>
+    <div class="campo"><label for="c-nombre">Nombre</label><input id="c-nombre" name="nombre" autocomplete="name"></div>
+    <div class="campo"><label for="c-correo">Correo</label><input id="c-correo" name="correo" type="email" autocomplete="email"></div>
+    <div class="campo"><label for="c-mensaje">Mensaje</label><textarea id="c-mensaje" name="mensaje" rows="4"></textarea></div>
+    <button class="btn btn--azur" type="submit">Enviar mensaje</button>
+  </form>
+  <p id="contacto-msg" role="status" class="aviso" style="margin-top:1rem"></p>
+</div></section>
+<section class="seccion" id="legal" aria-labelledby="leg-t"><div class="contenedor">
+  <h2 id="leg-t">Términos y privacidad</h2>
+  <p>Los textos legales definitivos están <span class="pendiente">pendientes de redactar con el cliente</span>. Mientras tanto, esta demostración guarda tu carrito, tu biblioteca y tus formularios solo en tu propio navegador y no los envía a ningún servidor.</p>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>

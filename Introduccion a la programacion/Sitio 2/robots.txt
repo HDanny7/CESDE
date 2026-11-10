@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /carrito.html
+Sitemap: https://eldelirio.com/sitemap.xml

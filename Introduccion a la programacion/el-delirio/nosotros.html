@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nosotros | El Delirio</title>
+<meta name="description" content="Conoce El Delirio, la librería en línea con libros digitales y físicos, y a su mascota: un gato lector.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="Nosotros | El Delirio">
+<meta property="og:description" content="Conoce El Delirio, la librería en línea con libros digitales y físicos, y a su mascota: un gato lector.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="nosotros">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<div class="pagina-cabecera"><div class="contenedor"><h1>Nosotros</h1></div></div>
+<section class="seccion"><div class="contenedor dos">
+  <div>
+    <h2>Un solo lugar para elegir cómo leer</h2>
+    <p>El Delirio es una librería en línea que vende libros de todos los géneros: novela, ciencia ficción, romance, misterio, infantil, autoayuda, negocios y académicos, entre otros.</p>
+    <p>Cada título puede llegar en EPUB o PDF con descarga inmediata, o como libro físico con envío a domicilio. Tú decides si lo lees al instante en pantalla o en papel en casa.</p>
+    <h3>Nuestra misión</h3>
+    <p>Hacer fácil y seguro conseguir libros a buen precio, sin recorrer librerías. <span class="pendiente">Redacción por confirmar con el cliente</span></p>
+    <h3>Nuestra historia</h3>
+    <p><span class="pendiente">Pendiente de confirmar: año de fundación y equipo</span></p>
+    <h3>El gato de la marca</h3>
+    <p>Nuestra mascota es un gato lector que te acompaña por todo el sitio. Si mueves el cursor, te sigue con la mirada.</p>
+  </div>
+  <div id="nos-gato" aria-hidden="true"></div>
+</div></section>
+<section class="boletin" aria-labelledby="bol-t"><div class="contenedor">
+  <h2 id="bol-t">Únete a los lectores de El Delirio</h2>
+  <p>Recibe las novedades del catálogo en tu correo.</p>
+  <form id="boletin-form" novalidate>
+    <div class="campo"><label class="solo-lectores" for="bol-correo">Correo electrónico</label><input id="bol-correo" name="correo" type="email" placeholder="tu@correo.com" autocomplete="email"></div>
+    <button class="btn btn--azur" type="submit">Suscribirme</button>
+  </form>
+  <p id="boletin-msg" role="status"></p>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>

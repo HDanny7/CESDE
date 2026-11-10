@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha del Libro - El Delirio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <img src="assets/logos/logo.svg" alt="Logo">
+        <span>El Delirio</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Ayuda</a></li>
+          <li><a href="carrito.html" class="btn-cart">Carrito (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="display: flex; gap: 3rem; flex-wrap: wrap; align-items: flex-start;">
+      <img src="assets/images/libro1.jpg" alt="Portada" style="max-width: 300px; border-radius: 8px;">
+      <div>
+        <h2>Cuentos de la Noche</h2>
+        <p style="margin: 0.5rem 0; font-style: italic;">Autor: Autor Invitado | Género: Novela / Misterio</p>
+        <p class="precio" style="font-size: 1.5rem; margin: 1rem 0;">$ 45.000 COP</p>
+        <p style="margin-bottom: 1.5rem;">Selecciona el formato de tu preferencia para descarga inmediata o envío a domicilio seguro.</p>
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+          <button class="btn-primary" style="background: var(--primary);">EPUB</button>
+          <button class="btn-primary" style="background: var(--primary);">PDF</button>
+          <button class="btn-primary" style="background: var(--primary);">Físico</button>
+        </div>
+        <button class="btn-primary agregar-carrito">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 El Delirio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

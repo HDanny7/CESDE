@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acceder o crear cuenta | El Delirio</title>
+<meta name="description" content="Ingresa a tu cuenta de El Delirio o crea una nueva para guardar tu biblioteca.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="Acceder o crear cuenta | El Delirio">
+<meta property="og:description" content="Ingresa a tu cuenta de El Delirio o crea una nueva para guardar tu biblioteca.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="acceder">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<div class="pagina-cabecera"><div class="contenedor"><h1>Acceder</h1></div></div>
+<section class="seccion"><div class="contenedor estrecho">
+  <div id="cuenta" hidden><p id="cuenta-txt"></p><button class="btn btn--borde" id="salir" type="button">Cerrar sesión</button></div>
+  <div id="paneles">
+    <div class="pestanas" role="tablist" aria-label="Acceso">
+      <button role="tab" aria-selected="true" data-v="ingresar" type="button">Ingresar</button>
+      <button role="tab" aria-selected="false" data-v="registro" type="button">Crear cuenta</button>
+    </div>
+    <form id="form-ingresar" novalidate>
+      <div class="campo"><label for="i-correo">Correo</label><input id="i-correo" name="correo" type="email" autocomplete="email"></div>
+      <div class="campo"><label for="i-clave">Contraseña</label><input id="i-clave" name="clave" type="password" autocomplete="current-password"></div>
+      <button class="btn btn--azur" type="submit">Ingresar</button><p class="msg-error" id="ing-msg" role="alert"></p>
+    </form>
+    <form id="form-registro" novalidate hidden>
+      <div class="campo"><label for="r-nombre">Nombre</label><input id="r-nombre" name="nombre" autocomplete="name"></div>
+      <div class="campo"><label for="r-correo">Correo</label><input id="r-correo" name="correo" type="email" autocomplete="email"></div>
+      <div class="campo"><label for="r-clave">Contraseña (mínimo 8 caracteres)</label><input id="r-clave" name="clave" type="password" autocomplete="new-password"></div>
+      <button class="btn btn--azur" type="submit">Crear cuenta</button><p class="msg-error" id="reg-msg" role="alert"></p>
+    </form>
+    <p class="aviso" style="margin-top:1.5rem">Demostración: la cuenta se guarda solo en este navegador. Una cuenta real requiere un servidor con base de datos.</p>
+  </div>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>

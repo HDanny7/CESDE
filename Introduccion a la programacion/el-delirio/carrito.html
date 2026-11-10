@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrito y pago | El Delirio</title>
+<meta name="description" content="Revisa tu pedido, aplica un cupón y elige tu método de pago en El Delirio.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="Carrito y pago | El Delirio">
+<meta property="og:description" content="Revisa tu pedido, aplica un cupón y elige tu método de pago en El Delirio.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="carrito">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<div class="pagina-cabecera"><div class="contenedor"><h1>Carrito y pago</h1></div></div>
+<section class="seccion"><div class="contenedor">
+  <div id="carro-vacio" class="vacio" hidden><svg class="gato" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 30 L13 5 L29 17 Q32 16.5 35 17 L51 5 L54 30 Q56 44 32 44 Q8 44 10 30Z" fill="currentColor"/><circle cx="23" cy="29" r="5" fill="#1E90E0"/><circle cx="41" cy="29" r="5" fill="#1E90E0"/><circle cx="23" cy="29" r="2.200" fill="#121212"/><circle cx="41" cy="29" r="2.200" fill="#121212"/></svg><h2>Tu carrito está vacío</h2><p>Elige un libro en el catálogo y agrégalo aquí.</p><a class="btn btn--azur" href="catalogo.html">Ver el catálogo</a></div>
+  <div id="carro-lleno" class="carro" hidden>
+    <section aria-labelledby="ped-t"><h2 id="ped-t">Tu pedido</h2><div id="lineas"></div></section>
+    <aside class="resumen" aria-labelledby="res-t"><h2 id="res-t">Resumen</h2>
+      <div class="campo"><label for="cupon">Cupón</label><div style="display:flex;gap:.5rem"><input id="cupon" type="text" autocomplete="off"><button type="button" class="btn btn--borde btn--chico" id="cupon-btn">Aplicar</button></div></div>
+      <dl id="totales"></dl>
+      <form id="pago" novalidate>
+        <div class="campo"><label for="correo">Correo para el recibo</label><input id="correo" name="correo" type="email" autocomplete="email"></div>
+        <div id="envio-campos" hidden>
+          <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name"></div>
+          <div class="campo"><label for="ciudad">Ciudad</label><select id="ciudad" name="ciudad"></select></div>
+          <div class="campo"><label for="direccion">Dirección de envío</label><input id="direccion" name="direccion" autocomplete="street-address"></div>
+          <div class="campo"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="campo"><label for="metodo">Método de pago</label><select id="metodo" name="metodo"><option value="">Elige uno</option><option>Tarjeta</option><option>PSE</option><option>Billetera digital</option></select></div>
+        <p class="aviso">Pago simulado: no se cobra nada ni se piden datos de tarjeta.</p>
+        <button class="btn btn--azur" type="submit" style="width:100%;margin-top:1rem">Pagar</button>
+      </form>
+    </aside>
+  </div>
+  <div id="confirmacion" tabindex="-1" hidden></div>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>

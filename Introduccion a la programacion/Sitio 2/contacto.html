@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda y Contacto - El Delirio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <img src="assets/logos/logo.svg" alt="Logo">
+        <span>El Delirio</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="active">Ayuda</a></li>
+          <li><a href="carrito.html" class="btn-cart">Carrito (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Ayuda y Contacto</h2>
+    <p style="margin: 1rem 0;">¿Tienes dudas sobre los formatos EPUB, PDF o los envíos físicos? Escríbenos directamente.</p>
+    
+    <form id="form-contacto" style="max-width: 600px; display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+      <div>
+        <label for="nombre" style="display:block; margin-bottom:0.5rem; font-weight:bold;">Nombre:</label>
+        <input type="text" id="nombre" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div>
+        <label for="email" style="display:block; margin-bottom:0.5rem; font-weight:bold;">Correo electrónico:</label>
+        <input type="email" id="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+      </div>
+      <div>
+        <label for="mensaje" style="display:block; margin-bottom:0.5rem; font-weight:bold;">Mensaje o duda:</label>
+        <textarea id="mensaje" rows="4" required style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="border:none; cursor:pointer; font-size:1rem;">Enviar mensaje</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 El Delirio. Contacto: german@example.com | Tel: 3000000000</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

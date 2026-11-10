@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de libros EPUB, PDF y físicos | El Delirio</title>
+<meta name="description" content="Explora el catálogo de El Delirio y filtra por género, formato (EPUB, PDF o físico) y precio.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="El Delirio">
+<meta property="og:title" content="Catálogo de libros EPUB, PDF y físicos | El Delirio">
+<meta property="og:description" content="Explora el catálogo de El Delirio y filtra por género, formato (EPUB, PDF o físico) y precio.">
+<link rel="icon" href="assets/logos/gato.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="catalogo">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<div id="cabecera"></div>
+<main id="contenido">
+<div class="pagina-cabecera"><div class="contenedor"><h1>Catálogo</h1><p>Filtra por género, formato y precio. <span id="conteo" aria-live="polite"></span></p></div></div>
+<section class="seccion"><div class="contenedor catalogo">
+  <form id="filtros" class="filtros" aria-label="Filtros del catálogo">
+    <div class="campo"><label for="q">Buscar</label><input id="q" name="q" type="search" placeholder="Título o autor"></div>
+    <div class="campo"><label for="f-genero">Género</label><select id="f-genero" name="genero"></select></div>
+    <fieldset><legend>Formato</legend>
+      <div class="op"><input type="checkbox" id="fm-epub" name="fmt" value="epub"><label for="fm-epub">EPUB</label></div>
+      <div class="op"><input type="checkbox" id="fm-pdf" name="fmt" value="pdf"><label for="fm-pdf">PDF</label></div>
+      <div class="op"><input type="checkbox" id="fm-fisico" name="fmt" value="fisico"><label for="fm-fisico">Físico</label></div>
+    </fieldset>
+    <div class="campo"><label for="precio">Precio máximo: <output id="precio-val" for="precio"></output></label><input id="precio" name="precio" type="range" min="5000" max="80000" step="1000" value="80000"></div>
+    <div class="campo"><label for="orden">Ordenar por</label><select id="orden" name="orden"><option value="">Selección de la casa</option><option value="precio-asc">Precio: menor a mayor</option><option value="precio-desc">Precio: mayor a menor</option><option value="titulo">Título (A–Z)</option></select></div>
+    <button type="reset" class="btn btn--borde btn--chico">Quitar filtros</button>
+  </form>
+  <div><div class="rejilla" id="lista"></div><nav class="paginas" id="paginas" aria-label="Páginas del catálogo"></nav></div>
+</div></section>
+</main>
+<div id="pie"></div>
+</body>
+</html>
