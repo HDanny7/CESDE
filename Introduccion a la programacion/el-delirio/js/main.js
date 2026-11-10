@@ -143,7 +143,7 @@ function montarEstructura() {
     <div><h2>El Delirio</h2><p>Libros digitales (EPUB y PDF) y físicos. Elige cómo leer.</p></div>
     <div><h2>Explora</h2><ul><li><a href="catalogo.html">Catálogo</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="biblioteca.html">Mi biblioteca</a></li></ul></div>
     <div><h2>Ayuda y legal</h2><ul><li><a href="ayuda.html#formatos">Guía de formatos</a></li><li><a href="ayuda.html#envios">Envíos y devoluciones</a></li><li><a href="ayuda.html#faq">Preguntas frecuentes</a></li><li><a href="ayuda.html#legal">Términos y privacidad</a></li></ul></div>
-    <div><h2>Contacto</h2><ul><li><a href="mailto:german@example.com">german@example.com</a> <span class="pendiente">correo de ejemplo</span></li><li>Redes sociales: <span class="pendiente">pendiente de confirmar</span></li></ul></div>
+    <div><h2>Contacto</h2><ul><li><a href="mailto:german@example.com">german@example.com</a></li><li>Redes sociales:</li></ul></div>
   </div><small>© 2026 El Delirio · Proyecto académico de Introducción a la programación. Los pagos y envíos son simulados.</small></div></footer>`;
   document.body.insertAdjacentHTML('beforeend', `<div class="flotantes">
     <button class="flotante flotante--arriba" id="arriba" aria-label="Volver al inicio de la página" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
